@@ -73,6 +73,7 @@ describe('Dynamic Import', () => {
 
 ## resources
 
+* https://jestjs.io/docs/en/tutorial-async#asyncawait
 * https://github.com/facebook/jest/blob/master/examples/async/.babelrc.js
 * https://jestjs.io/docs/en/cli
 * https://www.freecodecamp.org/news/javascript-new-features-es2020/
