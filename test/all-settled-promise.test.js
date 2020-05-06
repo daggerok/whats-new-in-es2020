@@ -11,9 +11,9 @@ it('should use Promise.allSettled', () => {
     .then(results => {
       expect(results).toContainEqual({ status: 'fulfilled', value: 123 });
       expect(results).toContainEqual({ status: 'fulfilled', value: 321 });
-      expect(results).toContainEqual({"reason": null, "status": "rejected"});
+      expect(results).toContainEqual({ 'reason': null, 'status': 'rejected' });
       // console.debug('logging all promises settled', results);
-    })
+    });
 });
 
 it('should assert Promise.allSettled in async/await', async () => {
@@ -27,5 +27,5 @@ it('should assert Promise.allSettled in async/await', async () => {
   const results = await Promise.allSettled(promisesArray);
   await expect(results).toContainEqual({ status: 'fulfilled', value: 123 });
   await expect(results).toContainEqual({ status: 'fulfilled', value: 321 });
-  await expect(results).toContainEqual({"reason": null, "status": "rejected"});
+  await expect(results).toContainEqual({ 'reason': null, 'status': 'rejected' });
 });
