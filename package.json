@@ -13,18 +13,27 @@
   "author": "daggerok",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "7.9.6",
     "@jest/core": "26.0.1",
+    "@jest/globals": "26.0.1",
     "@jest/reporters": "26.0.1",
     "@jest/types": "26.0.1",
     "@types/jest": "25.2.1",
     "@types/node": "13.13.5",
-    "babel-preset-env": "1.7.0",
+    "core-js": "3.6.5",
     "jest": "26.0.1",
     "jest-junit": "10.0.0"
   },
   "babel": {
     "presets": [
-      "env"
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ]
   }
 }
