@@ -2,7 +2,6 @@
   "name": "whats-new-in-es2020",
   "version": "1.0.0",
   "description": "What's new in es2020",
-  "main": "index.js",
   "scripts": {
     "dev": "npm run test -- --watchAll",
     "test": "jest --reporters=default --reporters=jest-junit --collect-coverage"
